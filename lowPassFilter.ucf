@@ -1,0 +1,28 @@
+CONFIG VCCAUX = "3.3" ;
+CONFIG ENABLE_SUSPEND = "FILTERED" ;
+CONFIG POST_CRC = "DISABLE" ;
+
+NET "CLK_50M"       LOC = "E12"  | IOSTANDARD = LVCMOS33 | PERIOD = 20.000 ;
+OFFSET = IN  10.000 VALID 20.000 BEFORE "CLK_50M" ;
+OFFSET = OUT 20.000 AFTER "CLK_50M" ;
+
+
+	############################################
+	############################################
+	# DO NOT MODIFY ANYTHING ABOVE THIS POINT!!!
+	############################################
+	############################################
+
+//NET "SW<0>"         LOC = "V8"   | IOSTANDARD = LVCMOS33 ;
+//NET "SW<1>"         LOC = "U10"  | IOSTANDARD = LVCMOS33 ;
+//NET "SW<2>"         LOC = "U8"   | IOSTANDARD = LVCMOS33 ;
+//NET "SW<3>"         LOC = "T9"  | IOSTANDARD = LVCMOS33 ;
+
+NET "LED<0>"        LOC = "R20"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LED<1>"        LOC = "T19"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LED<2>"        LOC = "U20"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LED<3>"        LOC = "U19"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LED<4>"        LOC = "V19"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LED<5>"        LOC = "V20"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LED<6>"        LOC = "Y22"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+NET "LED<7>"        LOC = "W21"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
